@@ -3,13 +3,43 @@
   <head>
     <link rel="stylesheet" href="mycssfile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      div.static {
+        position: static;
+        right: 20px;
+        padding: 10px;
+      }
+      body{
+        background-color: darkcyan;
+      }
+      @media only screen and (max-width: 1000px) {
+        body {
+          background-color: coral;
+        }
+      }
+      </style>
     <script src="https://kit.fontawesome.com/004332d5b8.js" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+      <h1>Assignment 2</h1>
+      <div class="row">
+        <div class="col-lg-6" style="background-color:salmon;">
+          <p>This is an example of using the Bootstrap grid.</p>
+        </div>
+        <div class="col-lg-4" style="background-color:darksalmon;">
+          <p>This is also an example of using the Bootstrap grid.</p>
+        </div>
+      </div>
+    </div>
     <title>About Me - Main Page</title>
+    <h1>Assignment 2</h1>
   </head>
   <body>
+    <div class = "static">
     <ul class = "fa-ul">
       <li><span class = "fa-li"><i class = "fa-solid fa-spin fa-bowling-ball"></i><a href="file:///C:/Users/nickr/OneDrive/Bridgewater%20State%20University/Semester%202%20(Spring%202022)/Web%20Application%20Development/lossantossavior.github.io/lossantossavior.github.io/General%20Resume%20-%20Copy.pdf">Resume</a></span></li>
       <li><span class = "fa-li"><i class = "fa-brands fa-github fa-beat"></i><a href="https://github.com/LosSantosSavior">Github</a></span></li>
     </ul>
+  </div>
   </body>
 </html>
+<!--After adding in the .css file above, I was unable to view any changes to my webpage through VS Code or via lossantossavior.github.io. I added FontAwesome and viewport before this issue, and added the bootstrap grid and the @media from an example from w3schools, adjusting it to my assumed liking, after encountering the issue. -->
